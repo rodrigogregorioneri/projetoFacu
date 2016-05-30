@@ -1,0 +1,49 @@
+<div class="component-holder ng-binding ng-scope" data-component="crn-sidebar" id="crn-sidebar-751554"> 
+  <div class="nav-side-menu navbar-default"> 
+    <div class="brand"> 
+      <img src="http://busc.hol.es/Imagens/55806c899dbfd1f9aaf360bfb5236a56.png" class="" width="" height="30"> 
+    </div> 
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content1"></i> 
+    <div class="menu-list"> 
+      <ul id="menu-content1" class="menu-content collapse out navbar-nav"> 
+         
+         
+         
+         
+      <li data-toggle="collapse" data-component="crn-sidebar-item" data-target="#menu-sub-2551" class="collapsed active component-holder"> <ul class="sub-menu collapse  navbar-nav in" id="menu-sub-2551">   </ul> </li> <li data-toggle="collapse" data-component="crn-sidebar-item" data-target="#menu-sub-8910" class="collapsed active component-holder"><a href="javascript:void(0);" class=""><i class="fa fa-money"></i> <span class="">Financeiro</span> <span class="arrow"></span></a> <ul class="sub-menu collapse  navbar-nav in" id="menu-sub-8910"> <li class=""><a href="#/home/admin/pagar" class="component-holder" data-component="crn-anchor">Contas a pagar</a></li>  <li><a href="#/home/admin/receber" class="component-holder" data-component="crn-anchor">Contas a receber</a></li></ul> </li> <li data-toggle="collapse" data-component="crn-sidebar-item" data-target="#menu-sub-8893" class="collapsed active component-holder"><a href="javascript:void(0);" class=""><i class="fa fa-wrench"></i> <span class="">Gerenciamento de recursos</span> <span class="arrow"></span></a> <ul class="sub-menu collapse  navbar-nav in" id="menu-sub-8893"> <li class=""><a href="#/home/admin/fornecedor" class="component-holder" data-component="crn-anchor">Fornecedor</a></li>  <li class=""><a href="#/home/admin/pedido" class="component-holder" data-component="crn-anchor">Pedido</a></li><li><a href="#/home/admin/estoque" class="component-holder" data-component="crn-anchor">Estoque</a></li></ul> </li> <li data-toggle="collapse" data-component="crn-sidebar-item" data-target="#menu-sub-9331" class="collapsed active component-holder"><a href="javascript:void(0);" class=""><i class="fa fa-users fa-lg"></i> <span class="">Gerenciamento de Clientes</span> <span class="arrow"></span></a> <ul class="sub-menu collapse  navbar-nav in" id="menu-sub-9331"> <li class=""><a href="#/home/admin/paciente" class="component-holder" data-component="crn-anchor">Paciente</a></li>  <li class=""><a href="#/home/admin/consultas" class="component-holder" data-component="crn-anchor">Consultas</a></li><li><a href="#/home/admin/produtos" class="component-holder" data-component="crn-anchor">Produtos</a></li></ul> </li> <li data-toggle="collapse" data-component="crn-sidebar-item" data-target="#menu-sub-394" class="collapsed active component-holder"><a href="javascript:void(0);" class=""><i class="fa fa-stethoscope"></i> <span class="">Gerenciamento de funcionarios</span> <span class="arrow"></span></a> <ul class="sub-menu collapse  navbar-nav in" id="menu-sub-394"> <li><a href="#/home/admin/colaboradores" class="component-holder" data-component="crn-anchor">Colaboradores</a></li>  </ul> </li> </ul> 
+    </div> 
+  </div> 
+  <div ui-view="" class="container-fluid main-view"> 
+  </div> 
+</div> 
+<div class="modal fade" id="modalPassword"> 
+  <div class="modal-dialog"> 
+    <div class="modal-content"> 
+      <div class="modal-header"> 
+        <button type="button" class="close" data-dismiss="modal" aria-label="{{'Home.view.Close' | translate}}"><span aria-hidden="true">×</span></button> 
+        <h4 class="modal-title">{{"Home.view.ChangePassword" | translate}}</h4> 
+      </div> 
+      <div class="modal-body"> 
+        <form class="form-validation" autocomplete="off" name="form" role="form"> 
+          <div class="text-danger wrapper text-center" ng-show="authError"> 
+          </div> 
+          <div class="list-group list-group-sm"> 
+            <div class="list-group-item"> 
+              <input type="password" class="form-control no-border" id="oldPassword" placeholder="{{'Home.view.Old Password' | translate}}"> 
+            </div> 
+            <div class="list-group-item"> 
+              <input type="password" class="form-control no-border" id="newPassword" placeholder="{{'Home.view.New Password' | translate}}"> 
+            </div> 
+            <div class="list-group-item"> 
+              <input type="password" class="form-control no-border" id="newPasswordConfirmation" placeholder="{{'Home.view.Confirmation' | translate}}"> 
+            </div> 
+          </div> 
+        </form> 
+      </div> 
+      <div class="modal-footer"> 
+        <button class="btn btn-primary" type="submit" ng-click="changePassword()" ng-disabled="form.$invalid || vm.dataLoading">{{"Home.view.ChangePassword" | translate}}</button> 
+        <button type="button" class="btn btn-default" data-dismiss="modal">{{'Home.view.Close' | translate}}</button> 
+      </div> 
+    </div> 
+  </div> 
+</div>
